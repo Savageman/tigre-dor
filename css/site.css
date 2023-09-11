@@ -1,0 +1,128 @@
+html {
+  height: 100%;
+}
+body {
+  background: lavender;
+  padding: 1em;
+}
+#global {
+  font-size: 18px;
+  max-width: 80em;
+  margin: 0 auto;
+  border: 3px solid #303030;
+  overflow: hidden;
+  background: lavenderblush;
+  border-radius: 1em;
+  position: relative;
+}
+
+main {
+  padding: 2em 1em 1.5em;
+}
+h1,h2,h3,h4 {
+  font-family: 'Kaushan Script', cursive;
+  margin: 1em 0 0;
+}
+img {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 800px) {
+  #global {
+    font-size: 15px;
+  }
+  main {
+    padding-top: 1.5em;
+  }
+}
+
+
+
+/*
+ * HEADER
+ */
+header {
+  background: #303030;
+  margin: 0;
+  padding: 0;
+  color: gold;
+  display: block;
+  letter-spacing: 2px;
+  height: 100px;
+  border-bottom: 3px solid #303030;
+}
+#logo-tigre {
+  background: gold;
+  padding: 1em;
+  border-radius: 0 0 1em 0;
+  border: 3px solid #303030;
+  border-width: 0 3px 3px 0;
+  float: left;
+}
+h1 {
+  margin: 0;
+  padding: 0 0 0 0.5em;
+  font-size: 40px;
+  line-height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media only screen and (max-width: 800px) {
+  header {
+    height: 80px;
+  }
+  #logo-tigre {
+    padding: 0.7em;
+    width: 80px;
+    height: 80px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.two-columns > div {
+  width: 47%;
+}
+@media only screen and (max-width: 800px) {
+  .two-columns {
+    flex-direction: column;
+  }
+  .two-columns > div {
+    width: auto;
+  }
+}
+
+.item {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+}
+.item__day {
+  flex-grow: 1;
+  font-weight: bold;
+  border-bottom: #303030 dotted 1px;
+  width: 10em;
+}
+.item__morning, .item__afternoon {
+  border-bottom: #303030 solid 1px;
+  min-width: 6em;
+  text-align: center;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover > * {
+  text-decoration: underline;
+}

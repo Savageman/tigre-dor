@@ -1,0 +1,184 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 18px;
+}
+
+main {
+  margin: 1em;
+  display: flex;
+}
+img {
+  margin: 0 auto;
+}
+
+.page-a3 {
+  position: relative;
+  width: 148.5mm;
+  height: 210mm;
+  background: gold;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+
+/*
+ * HEADER
+ */
+header {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  background: #303030;
+  margin: 0;
+  padding: 0 0 2mm 7mm;
+  color: gold;
+  display: block;
+  font-size: 1.5cm;
+  letter-spacing: 2px;
+  margin-bottom: 4mm;
+}
+
+header > aside {
+  text-align: center;
+  font-size: 1.2em;
+  position: absolute;
+  top: 4mm;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  background: #ffd700;
+  border: 2px solid #303030;
+  border-right: 0;
+  border-radius: 1em 0 0 1em;
+  padding: 4mm 0;
+}
+.logo-tigre {
+  border-bottom: 0;
+  margin: 0 auto;
+}
+.formules {
+  padding: 0 2mm;
+}
+.formule {
+  margin-top: 4mm;
+}
+.formule u {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 2px solid #000000;
+  line-height: 0.9em;
+}
+
+/*
+ * TITLES
+ */
+h2 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 8mm 1mm 8mm;
+  background: Gold;
+  border: 2px solid #303030;
+  border-radius: 7mm;
+  margin: 3mm 0 5mm -2mm;
+}
+/*
+h2::before {
+  content: '';
+  background: url(../img/logo-tigre.png) no-repeat center center/cover;
+  position: absolute;
+  left: -10mm;
+  top: -5mm;
+  height: 22mm;
+  width: 22mm;
+  z-index: 1;
+}
+*/
+.icon {
+  position: relative;
+  top: 1mm;
+  right: 0;
+  padding: 0;
+  font-size: 2.2em;
+  padding-left: 1mm;
+  z-index: 1;
+}
+.icon__gyoza {
+  transform: rotate(100deg);
+}
+.icon__ramen {
+}
+.icon__bubble_tea {
+}
+h3 {
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.centered {
+  text-align: center;
+}
+
+
+/**
+ * CONTENT
+ */
+.main {
+  flex-grow: 1;
+  margin: 0 4mm 4mm;
+  padding: 0 5mm 0mm;
+  background: lavenderblush;
+  border: 2px solid #303030;
+  border-radius: 8mm;
+  position: relative;
+}
+section {
+  margin-bottom: 8mm;
+}
+section:last-of-type {
+  margin-bottom: 5mm;
+}
+ul {
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+}
+.item__name {
+  flex-grow: 1;
+  font-weight: bold;
+  border-bottom: #303030 dotted 1px;
+}
+.item__price {
+  border-bottom: #303030 solid 1px;
+}
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.two-columns > div {
+  width: 47%;
+}
+
+.image-quynhs-tea {
+  position:absolute;
+  right: 6mm;
+  top: -20mm;
+}
+
+.pt5 {
+  padding-top: 0.5em;
+}
+
