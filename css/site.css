@@ -3,16 +3,18 @@ html {
 }
 body {
   background: lavender;
-  padding: 1em;
+  padding: 0 1em;
+  font-family: Raleway, sans-serif;
 }
 #global {
   font-size: 18px;
   max-width: 80em;
+  min-height: 100vh;
   margin: 0 auto;
   border: 3px solid #303030;
+  border-width: 0 3px;
   overflow: hidden;
   background: lavenderblush;
-  border-radius: 1em;
   position: relative;
 }
 
@@ -60,9 +62,9 @@ header {
 }
 h1 {
   margin: 0;
-  padding: 0 0 0 0.5em;
+  padding: 0.1em 0 0 0.4em;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 46px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -83,6 +85,34 @@ h1 {
 }
 
 
+.ctas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+}
+.cta {
+  width: 25%;
+  background: gold;
+  border: 2px solid #303030;
+  margin: 1em 0 0;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  text-decoration: none;
+}
+.cta > strong {
+  font-variant: small-caps;
+  font-size: 1.4em;
+}
+.cta:hover > strong {
+  text-decoration: none;
+}
+.cta:hover {
+  background: #303030;
+  color: gold;
+  text-decoration: none;
+}
+
 
 .two-columns {
   display: flex;
@@ -97,6 +127,12 @@ h1 {
     flex-direction: column;
   }
   .two-columns > div {
+    width: auto;
+  }
+  .ctas {
+    flex-direction: column;
+  }
+  .cta {
     width: auto;
   }
 }
