@@ -18,6 +18,13 @@ body {
   position: relative;
 }
 
+#banner {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/banniere.jpg");
+  min-height: 300px;
+}
+
 main {
   padding: 2em 1em 1.5em;
 }
@@ -51,6 +58,7 @@ header {
   letter-spacing: 2px;
   height: 100px;
   border-bottom: 3px solid #303030;
+  border-top: 3px solid #303030;
 }
 #logo-tigre {
   background: gold;
@@ -96,21 +104,26 @@ h1 {
   background: gold;
   border: 2px solid #303030;
   margin: 1em 0 0;
-  padding: 0.5em 1em;
+  padding: 0 1em;
   border-radius: 0.5em;
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
-.cta > strong {
+.cta > p, .cta:hover > p {
+  text-decoration: none;
+}
+.cta-icon {
+  height: 2em;
+  margin-right: 1em;
+}
+.cta strong {
   font-variant: small-caps;
   font-size: 1.4em;
-}
-.cta:hover > strong {
-  text-decoration: none;
 }
 .cta:hover {
   background: #303030;
   color: gold;
-  text-decoration: none;
 }
 
 
