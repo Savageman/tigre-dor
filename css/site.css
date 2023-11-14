@@ -54,41 +54,43 @@ header {
   margin: 0;
   padding: 0;
   color: gold;
-  display: block;
   letter-spacing: 2px;
   height: 100px;
   border-bottom: 3px solid #303030;
   border-top: 3px solid #303030;
+  display: flex;
+  justify-content: space-evenly;
 }
 #logo-tigre {
-  background: gold;
-  padding: 1em;
-  border-radius: 0 0 1em 0;
-  border: 3px solid #303030;
-  border-width: 0 3px 3px 0;
-  float: left;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  top: -40px;
+}
+header > * {
+  flex: 1 1 auto;
+  text-align: center;
+  height: 100px;
 }
 h1 {
   margin: 0;
-  padding: 0.1em 0 0 0.4em;
+  padding: 0;
   font-size: 40px;
-  line-height: 46px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  line-height: 100px;
 }
 @media only screen and (max-width: 800px) {
   header {
-    height: 80px;
+    height: 70px;
   }
   #logo-tigre {
-    padding: 0.7em;
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+    top: -25px;
   }
   h1 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 70px;
   }
 }
 
